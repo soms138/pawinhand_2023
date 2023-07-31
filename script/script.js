@@ -32,12 +32,12 @@ close.addEventListener('click',function(){
 // const 변수명 = new Swiper('적용대상',{속성:값, 속성:{추가속성값});
 const pawin_slide = new Swiper('#pawin_slide',{
     autoplay:{
-        delay:3000, // 슬라이드 간격(밀리초) 기본3초
+        delay:10000, // 슬라이드 간격(밀리초) 기본3초
         disableOnInteraction:false //버튼 클릭 후 자동재생 유지
     }, // 자동재생
     loop:true, // 자동재생 시 한 방향으로 움직이도록 하는 기능 false 기본값
-    effect:'fade', // 제자리 변경 슬라이드 효과
-    // direction:'vertical'
+    // effect:'fade', // 제자리 변경 슬라이드 효과
+    direction:'horizontal',
     navigation: { // 이전, 다음 내비게이션 연결
         // next,prev 객체 연결 시 부모를 안적으면
         // body 안에 있는 모든 swiper-next,prev를 인식하기 때문에
@@ -46,11 +46,11 @@ const pawin_slide = new Swiper('#pawin_slide',{
         prevEl: '#pawin_slide .swiper-button-prev',
     }
 });
-const s_slide = new Swiper('#s_slide',{
-    autoplay:{delay:2000},
-    loop:true,
-    navigation: { // 이전, 다음 내비게이션 연결
-        nextEl: '#s_slide .swiper-button-next',
-        prevEl: '#s_slide .swiper-button-prev',
-    }
-})
+// const s_slide = new Swiper('#s_slide',{
+//     autoplay:{delay:2000},
+//     loop:true,
+//     navigation: { // 이전, 다음 내비게이션 연결
+//         nextEl: '#s_slide .swiper-button-next',
+//         prevEl: '#s_slide .swiper-button-prev',
+//     }
+// })
