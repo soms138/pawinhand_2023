@@ -9,7 +9,7 @@ width 값 기준으로 설정해서 자연스러운 반응형웹을 설계한다
     main #pawin_slide .swiper-wrapper .slide1 {
         /* pawin-slide */
         /* 반응형웹의 슬라이드는 높이 고정 슬라이드의 경우 데스크탑, 모바일용의 이미지를 따로 제작하고 @media 모바일 조건에서 m 이미지로 변경하는 경로를 작성한다. */
-        background: url(../images/pawin_slide_m.png) center;
+        background: url(../images/pawin_slide_m1.jpg) center;
     }
 } /* 1160 end */
 @media screen and (max-width:900px) {
