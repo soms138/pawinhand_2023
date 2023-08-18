@@ -17,7 +17,6 @@ width 값 기준으로 설정해서 자연스러운 반응형웹을 설계한다
     header nav ul {display: none;}
     header nav .m_nav {
         width: 40px; height: 40px;
-        background: lime;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;

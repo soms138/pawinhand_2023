@@ -1,6 +1,5 @@
 /* desktop */
 header {
-    background: aqua;
     max-width: 1160px; height: 100px; margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
@@ -9,14 +8,14 @@ header {
     position: relative;
 }
 header h1 {
-    background: yellow;
-    width: 100px; height: 35px;
+    width: 300px; height: 50px;
+    margin-top: -45px;
 }
 header h1 a {}
-header h1 a img {width: 100%;}
-header nav {
-    background: pink;
+header h1 a img {
+    width: 100%;
 }
+header nav {}
 header nav ul {
     display: flex;
     flex-flow: row nowrap;
@@ -30,7 +29,6 @@ header nav ul li a {
 /* 모바일 메뉴 - 데스크탑에서 숨기기 */
 header nav .m_nav {display: none;}
 header .m_nav_open {
-    background: lime;
     display: none;
     width: 100%;
     position: absolute;
@@ -40,7 +38,6 @@ header .m_nav_open {
 header .m_nav_open #close {position: absolute; right: 15px; top:15px}
 header .m_nav_open #close .fa-xmark {font-size: 24px;}
 header .m_nav_open ul {
-    background: yellow;
     text-align: center;
 }
 header .m_nav_open ul li {margin-bottom: 30px;}
@@ -59,21 +56,24 @@ main {}
 main #pawin_slide {
     max-width: 1160px; 
     height: 650px;
-    background: yellow;
 }
 main #pawin_slide .swiper-wrapper {}
 /* main #pawin_slide .swiper-wrapper .swiper-slide img {width: 100%;} */
 main #pawin_slide .swiper-wrapper .slide1 {
     background: url(../images/pawin_slide1_desktop.jpg) center;
+    text-indent: -9999px;
 }
 main #pawin_slide .swiper-wrapper .slide2 {
     background: url(http://picsum.photos/id/53/1160);
+    text-indent: -9999px;
 }
 main #pawin_slide .swiper-wrapper .slide3 {
     background: url(http://picsum.photos/id/54/1160);
+    text-indent: -9999px;
 }
 main #pawin_slide .swiper-wrapper .slide4 {
     background: url(http://picsum.photos/id/55/1160);
+    text-indent: -9999px;
 }
 main #pawin_slide .swiper-button-prev,
 main #pawin_slide .swiper-button-next {
@@ -94,12 +94,9 @@ main #pawin_slide .swiper-button-next::after {
 }
 main #s_slide {
     width: 1160px; height: 300px;
-    background: aquamarine;
 }
 main #s_slide .swiper-wrapper {}
-main #s_slide .swiper-wrapper .swiper-slide {
-    background: pink;
-}
+main #s_slide .swiper-wrapper .swiper-slide {}
 main #s_slide .swiper-wrapper .s1 {
     background: url(http://picsum.photos/id/56/1160);
 }
@@ -133,8 +130,13 @@ main .dog_info {
     font-weight: 500;
 }
 main #dog_info_slide {
-    background: aqua;
     max-width: 1160px; margin:0 auto;
     width: calc(100% - 30px);
+    margin-bottom: 50px;
 }
+main #dog_info_slide .swiper-wrapper .swiper-slide img,
+main #dog_info_slide .swiper-wrapper .swiper-slide h2,
+main #dog_info_slide .swiper-wrapper .swiper-slide p {margin-bottom: 10px;}
+main #dog_info_slide .swiper-wrapper .swiper-slide h2 {font-weight: 500;}
+main #dog_info_slide .swiper-wrapper .swiper-slide p {}
 main #dog_info_slide .swiper-wrapper .swiper-slide .img img {width: 100%;}

@@ -56,7 +56,7 @@ const s_slide = new Swiper('#s_slide',{
 })
 // pawin-slide2
 const pawin_slide2 = new Swiper('#pawin_slide2',{
-    autoplay:{delay:1000},
+    autoplay:{delay:2000},
     loop:true,
     effect:'fade'
 });
@@ -64,7 +64,7 @@ const pawin_slide2 = new Swiper('#pawin_slide2',{
 const dog_info_slide = new Swiper('#dog_info_slide',{
     slidesPerView:'auto', // 한번에 보이는 슬라이드 개수 / breakpoints 옵션 추가시 'auto' 사용 아닐경우 숫자 넣기 
     spaceBetween:20, // 슬라이드 사이 여백
-    autoplay:{delay:1000},
+    autoplay:{delay:2000},
     loop:true,
     // siwper-slide 반응형웹 옵션
     breakpoints:{
